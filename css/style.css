@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#Calculadora {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.align-content-center {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+
+button:hover {
+    background-color: #2563eb;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+#resultado {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    margin: 0;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 24px;
+}

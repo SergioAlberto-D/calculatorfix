@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="./css/styletb.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/tabla.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bievenidos al 3D</h1>
+    </header>
+    <hr>
+    <main>
+        <table id="tabla_alumnos">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Matricula</th>
+                <th>Imagen Perfil</th>
+            </tr>
+            <tr>
+                <td>Sergio Alberto</td>
+                <td>18</td>
+                <td>20253ds104</td>
+                <td><img src="./Sprits/Lost tv pixel art isometrie.jpg" alt="Avatar de Sergio Alberto" class="profile-pic"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="button" id="Agregar">Agregar Alumno</button>
+        <form action="#" method="post" id="Formulario"> 
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre">
+            <label for="Edad">Edad</label>
+            <input type="number" name="Edad" id="Edad">
+            <label for="Matricula">Matricula</label>
+            <input type="text" name="Matricula" id="Matricula">
+            <label for="Imagen">Imagen</label>
+            <input type="file" name="Imagen" id="Imagen">
+            <br>
+            <button type="button" id="create">Nuevo Alumno/a</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2026 Páguina hecha por 3D, Derechos reservados</p>
+    </footer>
+</body>
+</html>

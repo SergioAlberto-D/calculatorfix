@@ -31,16 +31,18 @@ function multiplicar() {
 document.getElementById('btn_division').addEventListener('click', dividir);
 function dividir() {
     let valores = Valores();
-    let rel = valores.n1 / valores.n2;
+    
+        let rel = valores.n1 / valores.n2;
+    
     document.getElementById('resultado').innerHTML = "FL el resultado es: " + rel;
 }
 /*
-    Funcion Exponencial
+    Funcion restar
  */
-document.getElementById('btn_exponente').addEventListener('click', exponente);
+document.getElementById('btn_Restar').addEventListener('click', exponente);
 function exponente() {
     let valores = Valores();
 
-    let rel = Math.pow(valores.n1,valores.n2);
+    let rel = (valores.n1)-(valores.n2);
     document.getElementById('resultado').innerHTML = "FL el resultado es: " + rel;
 }
